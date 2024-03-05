@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weatherio</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="weather-box">
-        <h2>Weather<i class="fa-solid fa-umbrella"></i>o</h2>
-        <input type="text" id="location" placeholder="Search Loctaion">
+    <div id="weather-container">
+        <h2>Weather App</h2>
+        <input type="text" id="city" placeholder="Enter city">
         <button onclick="getWeather()">Search</button>
-        <img src="" id="weather-icon" alt="Weather Icon">
-        <div id="temp"></div>
-        <div id="info"></div>
-        <div id="forecast"></div>
 
+        <img id="weather-icon" alt="Weather Icon">
+
+        <div id="temp-div"></div>
+
+        <div id="weather-info"></div>
+
+        <div id="hourly-forecast"></div>
     </div>
-    
+   <script src="assets/java/script.js"></script>
 </body>
-<script src="assets/java/script.js"></script>
-<script src="https://kit.fontawesome.com/a6e3660750.js" crossorigin="anonymous"></script>
 </html>
