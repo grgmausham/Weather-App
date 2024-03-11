@@ -1,23 +1,35 @@
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+/* General styles */
 body {
-    background: #739fdc;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #739fdc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: 100vh;
-    margin: 0;
+}
+/*video*/
+.back-video {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+h1 {
+    font-style: italic;
+    padding-bottom: 10px;
 }
 
-#weather-container {
+.weather-container {
     background: rgba(255, 255, 255, 0.1);;
-    max-width: 400px;
-    padding: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
@@ -25,78 +37,133 @@ body {
     text-align: center;
 }
 
-h2, label, p {
-    color: #1c2835;
-    margin: 8px 0;
+.search-form {
+    display: flex;
+    align-items: center;
 }
 
-input {
-    width: calc(100% - 16px);
-    padding: 8px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    border: 1px solid white;
-    margin-top: 20px;
+input{
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #8bc1e6;
+    border-radius: 15px;
+    font-size: 1rem;
+    height: 3.5rem;
 }
 
-button {
-    background: #1c2835;
-    color: white;
-    padding: 10px;
+.search-btn {
+    background-color: #3498db;
     border: none;
-    border-radius: 10px;
+    padding: 15px;
+    border-radius: 15px;
     cursor: pointer;
-    margin-top: 20px;
-    width: 100px;
-    font-size: 15px;
+    color: white;
+    margin-left: 10px;
+    transition: backgroung-color 0.3s ease;
 }
-/*Button hover effect */
-button:hover {
-    background: #e37272;
-}
-
-#temp-div p {
-    font-size: 60px;
-    margin-top: -30px;
+/* Hover Effect */
+.search-btn:hover {
+    background-color: #d26161;
 }
 
-#weather-info {
-    font-size: 20px;
-}
-
-#weather-icon {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 10px; 
-    margin-bottom: 0;
+.city-date-section {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
     display: none;
 }
 
-#hourly-forecast {
-    margin-top: 50px;
-    overflow-x: auto;
-    white-space: nowrap;
-    display: flex;
-    justify-content: space-between;
+.city-date-section .city {
+    font-size: 2rem;
+    opacity: 0.9;
 }
 
-.hourly-item {
-    flex: 0 0 auto;
-    width: 80px;
+.city-date-section .date {
+    background-color: #3498db;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.temperature-info {
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-right: 10px;
-    color: rgb(45, 44, 44);
+    justify-content: center;
+    flex-direction: column;
+    display: none;
 }
 
-.hourly-item img {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 5px;
+.temperature-info .temp {
+    font-size: 10rem;
 }
 
-#hourly-heading {
-    color: #fff;
-    margin-top: 10px;
+.temperature-info .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.temperature-info .description i {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.temperature-info .description span {
+    font-size: 1.5rem;
+}
+
+.additional-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wind-info,
+.humidity-info,
+.visibility-info {
+    background-color: #ecf0f1;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+}
+
+.additional-info .material-icons {
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+.wind-info div,
+.humidity-info div,
+.visibility-info div {
+    text-align: center;
+}
+/*aspect ratio for video*/
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+/* Media query: large or landscape phones max 768px */
+@media screen and (max-width: 768px) {
+    .additional-info{
+        padding: 10px;
+}
 }
