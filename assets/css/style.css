@@ -61,9 +61,6 @@ input{
     margin-left: 10px;
     transition: backgroung-color 0.3s ease;
 }
-.error {
-    display: none;
-}
 /* Hover Effect */
 .search-btn:hover {
     background-color: #d26161;
