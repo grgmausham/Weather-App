@@ -6,7 +6,8 @@ async function fetchWeatherData(city) {
         );
 
         if (!response.ok) {
-            throw new Error("Unable to fetch weather data");
+             alert("Unable to fetch weather data");
+            window.location.reload();
         }
         const data = await response.json();
         // console.log(data.main.temp);
