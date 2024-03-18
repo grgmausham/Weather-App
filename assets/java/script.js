@@ -1,4 +1,4 @@
-const apiKey = 'e8f7e258b9a11ca774ec8594e2b4ff6d'
+const apiKey = '98f56ef303e1ee4cce62d07bc26e13d4';
 async function fetchWeatherData(city) {
     try {
         const response = await fetch(
@@ -6,7 +6,8 @@ async function fetchWeatherData(city) {
         );
 
         if (!response.ok) {
-            throw new Error("Unable to fetch weather data");
+             alert("Unable to fetch weather data");
+            window.location.reload();
         }
         const data = await response.json();
         // console.log(data.main.temp);
