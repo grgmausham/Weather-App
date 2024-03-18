@@ -165,5 +165,6 @@ input{
 @media screen and (max-width: 768px) {
     .additional-info{
         gap: 10px;
+        height: 155px;
 }
 }
