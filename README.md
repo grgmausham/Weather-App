@@ -41,7 +41,7 @@ I have confirmed that the form wokrs : requires user to type correct cities name
   - No errors were found when passing through the official (Jigsaw) validator
 - Javascript
   - Using JShint validator there are total of 29 warnings as of now 
-![Accesibiliy](assets/images/lightimg.png)
+-LightHouse testing(assets/images/lightimg.png)
 - Unfixed Bugs
   - None
 
