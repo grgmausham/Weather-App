@@ -164,6 +164,6 @@ input{
 /* Media query: large or landscape phones max 768px */
 @media screen and (max-width: 768px) {
     .additional-info{
-        padding: 10px;
+        gap: 10px;
 }
 }
