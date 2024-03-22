@@ -148,6 +148,13 @@ input{
 .visibility-info div {
     text-align: center;
 }
+/* css for 404 page*/
+.container {
+    text-align: center;
+}
+.
+
+
 /*aspect ratio for video*/
 @media(min-aspect-ratio: 16/9){
     .back-video{

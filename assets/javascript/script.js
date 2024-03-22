@@ -10,11 +10,7 @@ async function fetchWeatherData(city) {
             window.location.reload();
         }
         const data = await response.json();
-        // console.log(data.main.temp);
-        // console.log(data.name);
-        // console.log(data.wind.speed);
-        // console.log(data.main.humidity);
-        // console.log(data.visibility);
+        
         updateWeatherUI(data);
     } catch (error) {
         console.error(error);
