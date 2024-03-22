@@ -64,4 +64,7 @@ The live link can be found here - [Weathrio](https://grgmausham.github.io/Weathe
 
 ### Media
 
-- - Background video is imported for [Mixkit](https://mixkit.co/)
+ - Background video is imported for [Mixkit](https://mixkit.co/)
+
+ - Background video is imported for [Mixkit](https://mixkit.co/)
+
