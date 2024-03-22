@@ -35,11 +35,11 @@ This site helps users to know the time, temperature, wind speed, humidity and vi
 I have confirmed that the form wokrs : requires user to type correct cities name in order to show the result. If the user types the cities name wrong or false the submission will not work and the page will be reloaded for new search input. 
 ### Validator Testing 
 
-- HTML
+- HTML(https://validator.w3.org/)
   - 1 error has been found. As the page uses form element action attribute is left empty in order to submit the users input in a current page.
-- CSS
+- CSS(https://jigsaw.w3.org/css-validator/)
   - No errors were found when passing through the official (Jigsaw) validator
-- Javascript
+- Javascript(https://jshint.com/)
   - Using JShint validator there are total of 29 warnings as of now 
 ![Accesibiliy](assets/images/lightimg.png)
 - Unfixed Bugs
